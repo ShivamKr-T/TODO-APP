@@ -1,0 +1,103 @@
+.todo-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.todo-header {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.todolist-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  gap: 10px;
+}
+
+.todolist-item input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #888;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  margin-right: 10px;
+  transition: all 0.2s ease;
+}
+
+.todolist-item input[type="checkbox"]:checked {
+  background-color: #4caf50;
+  border: 2px solid #4caf50;
+}
+
+.todolist-item input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+.todolist-item p {
+  margin: 0;
+  flex-grow: 1;
+  font-size: 1rem;
+  color: #555;
+}
+
+.todo-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.todo-text span:first-child {
+  font-size: 1rem;
+  color: #555;
+}
+
+.dots {
+  color: #bbb;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.add-button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
