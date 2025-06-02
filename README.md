@@ -7,6 +7,7 @@ todo-app/
 ├── src/
 │ ├── components/
 │ │ ├── AddButton.jsx
+│ │ ├── CounterCompo.jsx
 │ │ ├── Header.jsx
 │ │ └── TodoList.jsx
 │ ├── App.js
